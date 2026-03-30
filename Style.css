@@ -1,0 +1,194 @@
+/* GLOBAL STYLES */
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+    font-size: 32px;
+}
+
+/* MENU BAR */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: #2e2118;
+    justify-content: center;
+}
+
+.menu-bar a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-bar a:hover {
+    background-color: #a4964d;
+    color: #000;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 20px;
+    width: auto;
+}
+
+
+/* ============================= */
+/* BREATHING EXERCISE */
+/* ============================= */
+
+.breathing-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.breathing-circle-main {
+    width: 150px;
+    height: 150px;
+    background-color: #7ec8e3;
+    border-radius: 50%;
+    margin: 40px auto;
+    transition: transform 4s ease-in-out;
+}
+
+.breathing-circle-main.expand {
+    transform: scale(1.6);
+}
+
+
+/* ============================= */
+/* MAIN LAYOUT FOR HOMEPAGE */
+/* ============================= */
+
+.main-layout {
+    display: flex;              /* two-column layout */
+    flex-wrap: wrap;            /* wrap on smaller screens */
+    align-items: flex-start;
+    gap: 40px;                  /* space between columns */
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.text-column {
+    flex: 1;                    /* take remaining space */
+    min-width: 300px;           /* ensures responsive wrapping */
+    font-size: 16px;
+}
+
+.image-column {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;         /* centers image in column */
+}
+
+.image-column img {
+    width: 100%;
+    max-width: 450px;           /* prevents image from getting too big */
+    border-radius: 10px;
+}
+
+
+/* ============================= */
+/* GROUNDING EXERCISE */
+/* ============================= */
+
+.grounding-section {
+    padding: 80px 20px;
+}
+
+.grounding-container {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Grounding Rectangle Visual */
+.grounding-visual {
+    width: 140px;
+    height: 70px;
+    background: linear-gradient(135deg, #c595f3, #8623a1);
+    border-radius: 12px;
+    margin: 20px auto;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.grounding-visual.active {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+/* Progress Bar */
+.grounding-container .progress {
+    height: 6px;
+    width: 100%;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.grounding-container .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #2a9d8f;
+    transition: width 0.5s ease;
+}
+
+/* Inputs */
+.grounding-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.grounding-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #457b9d;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grounding-container button:hover {
+    background: #1d3557;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ABOUT ME PAGE */
+
+/* Center all text in About Me */
+.about-section {
+    max-width: 900px;        /* optional, for readability */
+    margin: 60px auto;       /* center horizontally */
+    text-align: center;      /* center all text */
+    padding: 20px;
+    line-height: 1.6;
+    color: #2e2118;          /* matches menu/text color */
+}
