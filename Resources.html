@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Hennessy Counselling</title>
+    <title>A Hennessy Counselling - Resources</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- Menu Bar -->
@@ -22,39 +21,95 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<!-- BREATHING EXERCISE -->
-<section class="breathing-section">
-    <h2>Take a Moment to Breathe</h2>
-    <p id="breath-text">Breathe In...</p>
+<!-- Banner -->
+<div class="room-banner">
+    <img src="Images/lake.jpg.jpg" alt="lake.jpg">
+</div>
 
-    <div class="breathing-circle-main"></div>
+<!-- RESOURCES & FREE SUPPORT -->
+<section class="resources">
+    <h1>Resources & Free Support</h1>
+    <p class="resources-intro">
+        If you are still deciding whether to reach out, or if counselling isn't currently affordable, 
+        the organisations below offer free support, information, and helplines for a range of mental health challenges.
+        Or if you'd like to try some simple mindfulness exercises, you can use the tools below.
+    </p>
 </section>
 
+<!-- WELLBEING TOOLS SECTION -->
+<section class="tools-section">
+    <h1>Pause...</h1>
+    <p class="resources-intro">
+        Sometimes, when we’re feeling overwhelmed, taking a moment to pause and ground ourselves can be really helpful.
+        Below is a simple breathing tool you can use whenever you need a break from your thoughts.
+    </p>
+    <div class="tools-grid">
+        <!-- BREATHING EXERCISE -->
+        <div class="tool-box">
+            <h2>Take a Moment to Breathe</h2>
+            <p id="breath-text">Breathe In...</p>
+            <div class="breathing-circle-main"></div>
+        </div>
+    </div>
+</section>
 
-<!-- 5 SENSES GROUNDING EXERCISE -->
-<section class="grounding-section">
-
-    <div class="grounding-container">
-
-        <div class="grounding-visual"></div>
-
-        <div class="progress">
-            <div class="progress-bar" id="progressBar"></div>
+<!-- RESOURCES GRID -->
+<section class="resources">
+    <h2>Trusted Organisations</h2>
+    <p class="resources-intro">
+        Below is a selection of trusted organisations that provide free support, information and helplines for a range of mental health challenges.
+    </p>
+    <div class="resources-grid">
+        <div class="resource-card">
+            <img src="Images/samaritans.png" alt="samaritans">
+            <h3>Samaritans</h3>
+            <p><strong>Helpline:</strong> 116 123</p>
+            <p>A free 24-hour helpline for anyone struggling, in crisis, or simply needing someone to listen.</p>
+            <a href="https://www.samaritans.org" target="_blank">Visit Website</a>
         </div>
 
-        <h2 id="prompt">Click Start to Begin</h2>
+        <div class="resource-card">
+            <img src="Images/mind.png" alt="mind">
+            <h3>Mind</h3>
+            <p><strong>Infoline:</strong> 0300 123 3393</p>
+            <p>Mind provides trusted mental health information, coping strategies, and guidance on finding support locally.</p>
+            <a href="https://www.mind.org.uk" target="_blank">Visit Website</a>
+        </div>
 
-        <input id="userInput" type="text" placeholder="Type here..." style="display:none;">
+        <div class="resource-card">
+            <img src="Images/getselfhelp.png" alt="get gelf gelp">
+            <h3>Get Self Help</h3>
+            <p>CBT-based worksheets and resources that help with anxiety, depression, anger, and other challenges.</p>
+            <a href="https://www.getselfhelp.co.uk" target="_blank">Visit Website</a>
+        </div>
 
-        <button id="actionBtn">Start</button>
+        <div class="resource-card">
+            <img src="Images/painconcern.png" alt="Pain Concern">
+            <h3>Pain Concern</h3>
+            <p><strong>Helpline:</strong> 0300 123 0789</p>
+            <p>Support and information for people living with chronic pain, including self-help tools and community forums.</p>
+            <a href="https://painconcern.org.uk" target="_blank">Visit Website</a>
+        </div>
 
+        <div class="resource-card">
+            <img src="Images/hiddendisabilities.png" alt="Hidden Disabilities Sunflower">
+            <h3>Hidden Disabilities Sunflower</h3>
+            <p>A global initiative helping people with invisible disabilities receive understanding and support.</p>
+            <a href="https://hiddendisabilitiesstore.com" target="_blank">Visit Website</a>
+        </div>
+
+        <div class="resource-card">
+            <img src="Images/cruse.png" alt="Cruse Bereavement Support">
+            <h3>Cruse Bereavement Support</h3>
+            <p><strong>Helpline:</strong> 0808 808 1677</p>
+            <p>Bereavement counselling, grief support groups, and practical advice for coping with loss.</p>
+            <a href="https://www.cruse.org.uk" target="_blank">Visit Website</a>
+        </div>
     </div>
-
 </section>
 
 <script src="script.js"></script>
 
-</body>
 <!-- Footer -->
 <footer class="site-footer">
     <div class="footer-content">
@@ -68,11 +123,6 @@
         <p>Designed as a practice project for portfolio purposes.</p>
     </div>
 </footer>
-</html>
-
-</section>
-
-<script src="script.js"></script>
 
 </body>
 </html>
