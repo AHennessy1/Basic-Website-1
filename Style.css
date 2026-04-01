@@ -152,6 +152,95 @@ h1 {
 }
 
 /* ============================= */
+/* Candle Game          */
+/* ============================= */
+
+#candle-game-section {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.candle-game-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.candle-image {
+  width: 150px; /* adjust to your needs */
+  display: block;
+}
+
+/* ============================= */
+/* Candle Glow for Candle Game   */
+/* ============================= */
+.candle-container {
+  position: relative;
+  display: inline-block;
+}
+
+.candle-image {
+  display: block;
+  width: 150px; /* adjust as needed */
+}
+
+.candle-glow {
+  position: absolute;
+  top: 24%;       /* position over the flame */
+  left: 50%;
+  width: 10px;    /* narrower for flame shape */
+  height: 30px;   /* taller to match vertical flame */
+  border-radius: 50%;
+  background: orange;
+  box-shadow: 0 0 20px orange, 0 0 40px orange, 0 0 60px gold;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: none;
+  opacity: 0;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.candle-glow.lit {
+  opacity: 1;
+  animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 15px orange, 0 0 30px orange, 0 0 45px gold;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 20px orange, 0 0 40px orange, 0 0 60px gold;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.95);
+    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px gold;
+  }
+}
+
+/* Buttons */
+.candle-buttons {
+  margin-top: 20px;
+}
+
+.candle-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a4964d;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.candle-buttons button:hover {
+  background-color: #8f823f;
+}
+
+/* ============================= */
 /* TOOLS SECTION                  */
 /* ============================= */
 .tools-section {
