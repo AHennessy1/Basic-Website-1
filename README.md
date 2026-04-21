@@ -48,6 +48,6 @@ A responsive contact page with a two-column layout: an image and a submission fo
 
 ## How to View
 
-1. Clone or download the repository.
-2. Open `home.html` (or any other page) in a web browser.
-3. Navigate through the site using the menu bar.
+1. https://ahennessy1.github.io/Basic-Website-1/
+2. Or open `home.html` (or any other page) in a web browser.
+4. Navigate through the site using the menu bar.
